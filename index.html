@@ -24,6 +24,7 @@
             <ul>
                 <!-- todo index -->
                 <li v-for="(item, i) in todo"
+                 :class="{'fatto' : item.done}"
                  class="todo" 
                  :key="i">
                     {{item.text}}
