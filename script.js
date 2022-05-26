@@ -35,6 +35,9 @@ const toList = new Vue({
             }
             this.newTodo = "";
            
+        },
+        deleteItem(index){
+           this.todo.splice(index,1);
         }
 
     },

@@ -28,7 +28,7 @@
                  class="todo" 
                  :key="i">
                     {{item.text}}
-                    <i class="" :class="item.done == true ? 'fa-solid fa-check' : 'fas fa-times' "></i>
+                    <i class="" :class="item.done == true ? 'fa-solid fa-check' : 'fas fa-times' " @click="deleteItem(i)"></i>
                 </li>
             </ul>
         </div>
