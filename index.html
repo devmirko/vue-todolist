@@ -16,8 +16,8 @@
         </div>
 
         <div class="new_todo">
-             <input type="text" placeholder="nuova nota">
-             <button>aggiungi</button>
+             <input type="text" placeholder="nuova nota" v-model="newTodo" @keyup.enter="addItem">
+             <button @click="addItem">aggiungi</button>
         </div>
 
         <div class="todos-container">
