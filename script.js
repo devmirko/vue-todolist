@@ -1,7 +1,7 @@
-const toDoList = new Vue ({
-    el : "app",
+const toList = new Vue({
+    el : "#app",
     data : {
-        toDo : [
+        todo : [
             {
                 text : 'fare la spesa',
                 done : true
@@ -23,5 +23,9 @@ const toDoList = new Vue ({
                 done : false
             },
         ]
+    },
+    methods : {
+        
     }
-})
+});
+
